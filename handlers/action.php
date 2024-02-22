@@ -107,6 +107,39 @@ class AuthSystem {
       }
     }
   }
+  public function deleteUser($id, $email) {  
+    $id = Helpers::purge($id);
+    $email = Helpers::purge($email);
+    $this->db->delUser($id);
+    
+    $deletedUser = $this->db->getUserByEmail($email);
+    if (!$deletedUser) {
+      Helpers::setPopUp('deluser_success', $email . " email című felhasználó törlése sikeres");
+      Nav::redirect("authmodule/pages/users.php");
+    } else {
+      Helpers::setPopUp('deluser_error', $email . " email című felhasználó törlése sikertelen");
+      Nav::redirect("authmodule/pages/users.php");
+    }
+  }
+
+  public function getUsers($sort) {
+    $users = $this->db->getUsers($sort);
+    $_SESSION['users'] = $users;
+    $_SESSION['sorting'] = $sort;
+    Nav::redirect("authmodule/pages/users.php");
+  }
+
+  public function filterUsers($name, $email, $created_at, $updated_at) {
+    $users = $this->db->filterUsers($name, $email, $created_at, $updated_at, $_SESSION['sorting']);
+    if (count($users) < 1) {
+      Helpers::setPopUp('filter_error', 'Az adott szűrésre nincs találat!');
+      $_SESSION['filter_active'] = 0;
+      Nav::redirect("authmodule/pages/users.php");
+    } else {
+      $_SESSION["users"] = $users;
+      Nav::redirect("authmodule/pages/users.php");
+    }
+  }
 }
 
 $authSystem = new AuthSystem();
@@ -121,4 +154,12 @@ if (isset($_POST['register'])) {
   $authSystem->forgotPassword($_POST['email']);
 } elseif (isset($_POST['reset'])) {
   $authSystem->resetPassword($_POST['token'], $_POST['password'], $_POST['confirm_password']);
+} elseif (isset($_POST['fetch_users'])) {
+  $authSystem->getUsers($_POST['fetch_users']);
+} elseif (isset($_POST['deluser_id']) && isset($_POST['deluser_email'])) {
+  $authSystem->deleteUser($_POST['deluser_id'], $_POST['deluser_email']);
+} elseif (isset($_POST['sort_users'])) {
+  $authSystem->getUsers($_POST['sort_users']);
+} elseif (isset($_POST['filter_users'])) {
+  $authSystem->filterUsers($_POST['filter_name'], $_POST['filter_email'], $_POST['filter_created_at'], $_POST['filter_updated_at']);
 }

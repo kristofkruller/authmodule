@@ -39,7 +39,7 @@ if (Helpers::isLoggedIn()) {
                 <input type="email" name="email" id="email" class="form-control" required>
               </div>
               <div class="mb-3 d-grid">
-                <input type="submit" value="Send Reset Link" class="btn btn-primary">
+                <input type="submit" value="Visszaállító link küldése" class="btn btn-primary">
               </div>
               <p class="text-center">Még nincs profilod? <a href="/authmodule/pages/register.php">Regisztráció</a></p>
               <p class="text-center">Vissza a <a href="/authmodule">kezdőlapra</a></p>

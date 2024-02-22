@@ -51,7 +51,7 @@ if (Helpers::isLoggedIn()) {
                 <a href="/authmodule/pages/forgot.php">Elfelejtett jelszó?</a>
               </div>
               <div class="mb-3 d-grid">
-                <input type="submit" value="Login" class="btn btn-primary">
+                <input type="submit" value="Bejelentkezés" class="btn btn-primary">
               </div>
               <p class="text-center">Még nincs profilod? <a href="/authmodule/pages/register.php">Regisztráció</a></p>
             </form>

@@ -1,0 +1,285 @@
+.ui-datepicker {
+  text-align: center;
+  font-family: Open Sans, Arial, sans-serif;
+  margin-top: 2px;
+  padding: 0;
+  width: 256px;
+  border-radius: 20px;
+}
+#ui-datepicker-div > .ui-datepicker-calendar {
+  background-color: #c9f0f5;
+  padding-bottom: 20px;
+  height: 180px;
+  border-radius: 0 0 20px 20px;
+}
+
+.ui-datepicker-trigger {
+  margin: 0 0 0 5px;
+  vertical-align: text-top;
+}
+
+.openemr-calendar .ui-datepicker {
+  width: 191px;
+}
+
+.ui-datepicker table {
+  width: 256px;
+  table-layout: fixed;
+}
+
+.openemr-calendar .ui-datepicker table {
+  width: 191px;
+  table-layout: fixed;
+}
+
+.ui-datepicker-header {
+  background-color: #3e9aba;
+  background-image: none;
+  border-radius: 20px 20px 0 0;
+}
+
+.openemr-calendar .ui-datepicker-header {
+  background-color: #e6f7f9;
+  border-width: 1px;
+  border-color: #c9f0f5;
+  border-style: solid;
+}
+
+.ui-datepicker-title {
+  margin: 0 10px;
+  padding-bottom: 5px;
+}
+
+.ui-datepicker-prev span {
+  display: none;
+}
+
+.ui-datepicker-next {
+  text-align: center;
+}
+
+.ui-datepicker-next span {
+  display: none;
+}
+
+.ui-datepicker-prev {
+  background-color: transparent;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAAUklEQVQYlXWPwQnAMAwDj9IBOlpH8CjdJLNksuujFIJjC/w6WUioFBcqJ7sGEAD5Y/hpqLRghRv4YQlUjqXI3Kql2MixraGbEhVcDXcFUR/1egEHNuTBpFW0NgAAAABJRU5ErkJggg==');
+  height: 12px;
+  width: 7px;
+  margin: 10px 5px 0 5px;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+
+.openemr-calendar .ui-datepicker-prev {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAOCAYAAAD9lDaoAAAAuUlEQVQokXXRsUtCYRAA8J8pDQ1CVIgIgtBU2NDiZIuDS4uLf6WDS1O0tLREEE8icBNKS3lTs8/B78XHw3dwcHA/juOuqjzucYJVrQQMcYctvo4OgEFIeMK6iPphCjzjEWLUC3vACx7yRo5uMUIFr5gii1EL41AvMIkBVPGH04DrSLEsIvjEOZq4wi9+iijDR0ANXOMbmxjlcIY2LtANO6YxymGCDs5wg/ciYv+KBJeY4+2A+Y9j4Y47RtUkrNXeDxUAAAAASUVORK5CYII=');
+  height: 14px;
+  width: 9px;
+  margin: 5px;
+}
+
+.ui-datepicker-next {
+  cursor: pointer;
+}
+
+.ui-datepicker-prev {
+  cursor: pointer;
+}
+
+.ui-datepicker-next {
+  background-color: transparent;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAVUlEQVQYlXWQ0Q3AIAhEL07gKI7kKN2kI3Wk1w9to3KQEELucQEECOizhhTQGHFnwOdgobWx0GkZILfYBhXl0STVbPoBarbkL7ozN/F8VBBXh8uJgF5r2hrI4GHUkAAAAABJRU5ErkJggg==');
+  height: 12px;
+  width: 8px;
+  margin: 10px 5px 0 5px;
+  display: inline-block;
+  right: 0;
+  top: 0;
+}
+
+.openemr-calendar .ui-datepicker-next {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAtElEQVQYlXXQsUpCcRQH4I97EQyHa1pgIEE0hBGYL+BjNLRFjxXh4rM4F21BS4S4FAgqQioOngt/RM/6+zi/w4EanlA4MDkecYsO3vG/D8a4Rx03eMMqBQt8oodTXAdalwBm+IpNDVxG3aYEMMU3ujjDBT5SAH9R2cE58mwPFOgneJSCGp7RjLoXTEtQjbCFOV7xCxkqdp9sYxnhpFyb4QFXdh8c4Cc9Ko++OwzjFwfn5FiwBVeuI/K2UCkSAAAAAElFTkSuQmCC');
+  height: 14px;
+  width: 8px;
+  margin: 5px;
+}
+
+.ui-datepicker-month {
+  border-radius: 2px;
+  width: 110px;
+  height: 22px;
+  font-family: Open Sans;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  border: none;
+  margin-right: 17px;
+  vertical-align: text-top;
+}
+
+.openemr-calendar .ui-datepicker-month {
+  color: darkblue;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transform: scaleX(1.0029)
+}
+
+.ui-datepicker-year {
+  border-radius: 2px;
+  width: 61px;
+  height: 22px;
+  border: none;
+  font-family: Open Sans;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+.openemr-calendar .ui-datepicker-year {
+  font-family: Open Sans, Arial, sans-serif;
+  color: rgba(34, 34, 34, 0.87);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transform: scaleX(1.0029)
+}
+
+.ui-datepicker-month option,
+.ui-datepicker-year option {
+  color: #3985a0;
+  background-color: #fff;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ui-datepicker-month option[selected],
+.ui-datepicker-year option[selected] {
+  background-color: #e5edf0;
+}
+
+.ui-datepicker .ui-state-hover {
+  /*background: none;*/
+  border: 0;
+}
+
+.ui-datepicker td {
+  vertical-align: top;
+}
+
+.ui-datepicker .ui-state-default {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  text-align: center;
+  color: #707070;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 7px 0 0 4px;
+}
+
+.ui-datepicker .ui-state-default.ui-state-highlight{
+  border-color: #dcdcdc;
+  background-color: #cff3f8;
+  color: #3e9aba;
+}
+
+.openemr-calendar .ui-state-default {
+  font-size: 10px;
+  margin: 0;
+}
+
+.ui-datepicker td {
+  width: 33px;
+}
+
+.openemr-calendar .ui-datepicker td {
+  width: 26px;
+}
+
+.openemr-calendar .ui-state-default {
+  width: 26px;
+  height: 20px;
+  line-height: 20px;
+}
+.ui-state-default.ui-state-hover {
+  border-color: #dcdcdc;
+  background-color: #cff3f8;
+}
+
+.ui-datepicker .ui-state-active {
+  border-color: #dcdcdc;
+  background-color: #cff3f8;
+  color: red;
+} 
+
+.ui-datepicker-calendar thead tr th {
+  font-family: Open Sans, Arial, sans-serif;
+  color: #549fa8;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0.45em 0.3em;
+  /*   width: 15px; */
+}
+
+.openemr-calendar .ui-datepicker-calendar thead tr th {
+  font-size: 10px;
+}
+
+.ui-datepicker-close {
+  display: none;
+}
+
+.ui-datepicker thead {
+  background-color: #f5f5f5;
+}
+
+.openemr-calendar .ui-datepicker thead {
+  background: none;
+}
+
+.ui-state-default.ui-datepicker-current {
+  float: none;
+  font-family: Open Sans, Arial, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  border-width: 0;
+  border: none;
+  vertical-align: top;
+  margin: 0;
+  background-color: transparent;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content {
+  text-align: center;
+  background-color: #3e9aba;
+  margin: 0;
+  height: 28px;
+  padding: 0;
+}
+
+.openemr-calendar .ui-datepicker-year {
+  background-color: transparent;
+}
+
+.openemr-calendar .ui-datepicker-month {
+  background-color: transparent;
+}
+
+.openemr-calendar .ui-state-default {
+  border: 0;
+}
+
+.openemr-calendar .ui-datepicker-month {
+  margin-right: 10px;
+}
+

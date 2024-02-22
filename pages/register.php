@@ -49,7 +49,7 @@ if (Helpers::isLoggedIn()) {
                 <input type="password" name="confirm_password" id="confirm_password" class="form-control" required>
               </div>
               <div class="mb-3 d-grid">
-                <input type="submit" value="Register" class="btn btn-primary">
+                <input type="submit" value="Regisztráció" class="btn btn-primary">
               </div>
               <p class="text-center">Van már regisztrált profilod? <a href="/authmodule">Bejelentkezés</a></p>
             </form>
